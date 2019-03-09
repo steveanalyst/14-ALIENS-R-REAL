@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="icon" type="image" href="https://cdn3.iconfinder.com/data/icons/stroke/53/Alien-512.png">
   <title>UFO Finder</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
@@ -37,9 +38,26 @@
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
                         <label for="date">Enter a Date</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
+                        <input class="form-control" id="datetime" type="text" placeholder="1/1/2010">
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="date">Enter a City</label>
+                        <input class="form-control" id="city" type="text" placeholder="benton">
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="date">Enter a State</label>
+                        <input class="form-control" id="state" type="text" placeholder="ar">
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="date">Enter a Country</label>
+                        <input class="form-control" id="country" type="text" placeholder="us">
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="date">Enter a Shape</label>
+                        <input class="form-control" id="shape" type="text" placeholder="circle/light/triangle/unknown">
                       </li>
                     </ul>
+
                   </div>
                   <button id="filter-btn" type="submit" class="btn btn-default">Filter Table</button>
                 </form>
@@ -49,7 +67,7 @@
         </div>
         <div class="col-md-10">
           <div id="table-area" class="">
-            <table id="ufo-table" class="table table-striped">
+            <table id="customers" class="table table-striped">
               <thead>
                 <tr>
                   <th class="table-head">Date</th>
